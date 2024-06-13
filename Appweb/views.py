@@ -20,25 +20,4 @@ def about(resquest):
     )    
     
 def contac(resquest):
-    
-    return HttpResponse(
-    """
-        <form action="" method="post">
-            <ul>
-                <li>
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="user_name" />
-                </li>
-                <li>
-                <label for="mail">Correo electrónico:</label>
-                <input type="email" id="mail" name="user_mail" />
-                </li>
-                <li>
-                <label for="msg">Mensaje:</label>
-                <textarea id="msg" name="user_message"></textarea>
-                </li>
-                <input type="submit" value="Enviar" />
-            </ul>
-        </form>
-    """         
-    )        
+    return render(resquest,'plantilla.html')   
